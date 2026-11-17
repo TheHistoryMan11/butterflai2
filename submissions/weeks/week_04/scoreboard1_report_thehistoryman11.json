@@ -1,0 +1,120 @@
+{
+ "student": "TheHistoryMan11",
+ "variant": "profile-gen_gaussian__shape-weibull",
+ "kind": "candidate",
+ "question": "the same, with ties reverted to the baseline value",
+ "spec": {
+  "shape": "weibull",
+  "pooling": "shared",
+  "drift": "exponential",
+  "profile": "gen_gaussian",
+  "width": "constant",
+  "gate": "none",
+  "emission": "threshold"
+ },
+ "fitted_parameters": 25,
+ "held_out_nll_per_hemicycle_year": -25.20243595539674,
+ "between_hemicycle_spread": 18.25025619669478,
+ "held_out_nll_by_hemicycle": {
+  "12N": -2.340596427847793,
+  "12S": -3.8609494331365046,
+  "13N": -7.668567568884836,
+  "13S": -17.10288974120189,
+  "14N": -2.21700323968577,
+  "14S": -0.43592836611535674,
+  "15N": -14.355406019364791,
+  "15S": -15.91034865116499,
+  "17N": -33.223434923383806,
+  "17S": -35.926562022864246,
+  "18N": -52.60380829976443,
+  "18S": -44.993308998775426,
+  "19N": -60.42057304920461,
+  "19S": -41.04006540489992,
+  "21N": -32.72657515536873,
+  "21S": -34.142034025567966,
+  "23N": -25.508385107312535,
+  "23S": -29.167410762597818
+ },
+ "paired_vs_baseline": {
+  "mean": 0.22623179250956843,
+  "se": 0.362319168348759,
+  "median": 0.16516403889179365,
+  "better": 8,
+  "of": 18
+ },
+ "ks_median": 0.05611552200024028,
+ "ks_not_rejected": 7,
+ "count_error_percent": 10.55297341172858,
+ "plausibility": {
+  "cycle": 19,
+  "by_hemicycle": {
+   "19N": {
+    "predicted": 1431.210176784431,
+    "observed": 1590.0,
+    "centroid_model": 14.75625046728977,
+    "centroid_obs": 17.16069182389937,
+    "spread_model": 7.061268208175966,
+    "spread_obs": 8.50474278481396
+   },
+   "19S": {
+    "predicted": 1245.6458451333115,
+    "observed": 1121.0,
+    "centroid_model": 14.756239565723845,
+    "centroid_obs": 16.36842105263158,
+    "spread_model": 7.061345952580577,
+    "spread_obs": 7.601178491265532
+   }
+  }
+ },
+ "protocol": {
+  "held_out_unit_contributed": [
+   "its own clock (the shared drift timescale comes from the training fold)",
+   "its belt amplitude from the area record, through a map fitted on the training wings",
+   "nothing else: every shape parameter comes from the training fold"
+  ]
+ },
+ "fingerprint": {
+  "recipe": {
+   "mesh": [
+    201,
+    241
+   ],
+   "domain": [
+    0.0,
+    60.0
+   ],
+   "window": [
+    -6.0,
+    11.0
+   ],
+   "folds": [
+    12,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    21,
+    23
+   ],
+   "withheld": [
+    16,
+    20,
+    22
+   ],
+   "analysis_set": [
+    12,
+    23,
+    30.0
+   ],
+   "gauge": [
+    1.0,
+    1.0,
+    15.0
+   ],
+   "headline_amplitude": "area record"
+  },
+  "digest": "5e55384fbc54"
+ }
+}
